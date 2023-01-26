@@ -1,0 +1,127 @@
+body {
+    font-family: 'Padyakke Expanded One', cursive;
+    background-image: url('../img/tictactoe.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    color: whitesmoke
+}
+
+.btn-contenu {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*btn style */
+.button {
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.input {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.input:hover {
+    outline: none;
+}
+
+.modern {
+    transition: 0.5s ease;
+}
+
+.modernC {
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 10px -10px 0px rgb(192, 192, 192);
+
+}
+
+.modernC:hover {
+    box-shadow: -10px 10px 0px rgb(157, 255, 234);
+    border: 4px solid rgb(7, 219, 25);
+}
+
+/*box style*/
+.g-contenu {
+    /*display: flex;
+    for right and left 
+    for up & down
+    align-items: center;*/
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 40px;
+    justify-content: center;
+}
+
+.box {
+    background-color: antiquewhite;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    font-size: 40px;
+    box-shadow: 10px 10px 10px black;
+    cursor: pointer;
+    animation: style 5s infinite alternate
+}
+
+.❌ {
+    background-color: rgb(27, 247, 7);
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    font-size: 40px;
+    box-shadow: 10px 10px 10px black;
+    cursor: pointer;
+}
+
+.🅾️ {
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    font-size: 40px;
+    box-shadow: 10px 10px 10px black;
+    cursor: pointer;
+}
+
+@keyframes style {
+    0% {
+        background-color: red;
+    }
+
+    14% {
+        background-color: orange;
+    }
+
+    28% {
+        background-color: yellow;
+    }
+
+    42% {
+        background-color: green;
+    }
+
+    66% {
+        background-color: blueviolet;
+    }
+
+    82% {
+        background-color: indigo;
+    }
+
+    42% {
+        background-color: blue;
+    }
+}
